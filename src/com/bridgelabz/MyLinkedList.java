@@ -2,6 +2,7 @@ package com.bridgelabz;
 
 public class MyLinkedList<K> {
     INode<K> head;
+
     INode<K> tail;
 
     public MyLinkedList() {

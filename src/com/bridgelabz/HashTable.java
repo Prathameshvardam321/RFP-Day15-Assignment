@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class HashTable<K,V> {
+
     List<MyLinkedList> myBucketArray;
     int bucketSize;
 
