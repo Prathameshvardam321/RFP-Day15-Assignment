@@ -18,6 +18,23 @@ public class MyLinkedList<K> {
             head.setNext(tempNode);
         }
     }
+    public Boolean deletion(K deleteData){
+        INode<K> deleteNode=search(deleteData);
+        INode<K> temp = head;
+        while (temp!=null) {
+            if (temp == deleteNode){
+                head = deleteNode.getNext();
+                break;
+            }
+            else if (temp.getNext() == deleteNode) {
+                temp.setNext(deleteNode.getNext());
+                deleteNode.setNext(null);
+                return true;
+            }
+            temp=temp.getNext();
+        }
+        return false;
+    }
 
     INode<K> search(K searchData) {
         INode<K> temp = head;
