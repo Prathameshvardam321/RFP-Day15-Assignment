@@ -9,7 +9,6 @@ public class HashTable<K,V> {
 
     public HashTable() {
     }
-
     public HashTable(int bucketSize) {
         this.bucketSize = bucketSize;
         myBucketArray = new ArrayList<>(bucketSize);

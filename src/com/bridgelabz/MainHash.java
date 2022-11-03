@@ -15,6 +15,5 @@ public class MainHash {
             hashTable1.add(str, frequencyValue);
         }
         System.out.println(hashTable1);
-
     }
 }
